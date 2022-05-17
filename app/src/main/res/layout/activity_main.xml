@@ -6,13 +6,112 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <EditText
+        android:id="@+id/editTextNombrePrimerActivity"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/edit_text_nombre_primerActivity"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
 
+    <EditText
+        android:id="@+id/editTextApellidoPrimerActivity"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/edit_text_apellido_primerActivity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <EditText
+        android:id="@+id/editTextBasePrimerActivity"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/edit_text_base_primerActivity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <EditText
+        android:id="@+id/editTextExponentePrimerActivity"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/edit_text_exponente_primerActivity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <EditText
+        android:id="@+id/edittTextFactorialPrimerActivity"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/edit_text_factorial_primerActivity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <EditText
+        android:id="@+id/editTextPotenciaPrimerActivity"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/edit_text_potencia_primerActivity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <Button
+        android:id="@+id/buttonCalcularResultadosPrimerActivity"
+        android:layout_width="143dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/button_calcular_primerActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellidoPrimerActivity"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <Button
+        android:id="@+id/buttonSiguientePrimerActivity"
+        android:layout_width="143dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="120dp"
+        android:onClick="siguiente"
+        android:text="@string/button_siguiente_primer_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellidoPrimerActivity"
+        app:layout_constraintVertical_bias="0.956" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlvearPablo">
         <activity
+            android:name=".TercerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SegundoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

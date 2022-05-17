@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundoActivity">
+
+    <Button
+        android:id="@+id/buttonAtrasSegundoActivity"
+        android:layout_width="174dp"
+        android:layout_height="83dp"
+        android:text="@string/button_atras_segundoActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <Button
+        android:id="@+id/buttonSiguienteSegundoActivity"
+        android:layout_width="174dp"
+        android:layout_height="83dp"
+        android:onClick="siguiente2"
+        android:text="@string/boton_siguiente_segundoActivty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <EditText
+        android:id="@+id/editTextNombreSegundoActivity"
+        android:layout_width="241dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/edit_text_nombre_segundoActivity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAtrasSegundoActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextBaseSegundoActivity"
+        android:layout_width="219dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/edit_text_base_segundoActivity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAtrasSegundoActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <TextView
+        android:id="@+id/textViewExponenteSegundo"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBaseSegundoActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreSegundoActivity" />
+
+    <TextView
+        android:id="@+id/ApellidoSegundo"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBaseSegundoActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreSegundoActivity"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <TextView
+        android:id="@+id/factorialSegundo"
+        android:layout_width="98dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSiguienteSegundoActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">AlvearPablo</string>
+    <string name="button_siguiente_primer_activity">Siguiente</string>
+    <string name="button_calcular_primerActivity">Mostrar Resultado</string>
+    <string name="edit_text_nombre_primerActivity">Nombre</string>
+    <string name="edit_text_apellido_primerActivity">Apellido</string>
+    <string name="edit_text_base_primerActivity">Base</string>
+    <string name="edit_text_exponente_primerActivity">Exponente</string>
+    <string name="edit_text_factorial_primerActivity">Factorial</string>
+    <string name="edit_text_potencia_primerActivity">Potencia</string>
+    <string name="button_atras_segundoActivity">Atras</string>
+    <string name="edit_text_nombre_segundoActivity">NOmbre</string>
+    <string name="edit_text_base_segundoActivity">Base</string>
+    <string name="boton_siguiente_segundoActivty">Siguiente</string>
 </resources>
