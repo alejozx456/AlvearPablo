@@ -10,6 +10,7 @@
         android:id="@+id/buttonAtrasSegundoActivity"
         android:layout_width="174dp"
         android:layout_height="83dp"
+        android:onClick="volver"
         android:text="@string/button_atras_segundoActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

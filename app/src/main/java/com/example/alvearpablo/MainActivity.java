@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.alvearpablo.Logica.Calculos;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText nombre;
@@ -34,22 +36,28 @@ public class MainActivity extends AppCompatActivity {
         factorial.setEnabled(false);
         potencia.setEnabled(false);
 
-        String nombre2 = getIntent().getStringExtra("nombreTercerA");
+        String nombre2 = getIntent().getStringExtra("nombreVolver");
         nombre.setText(nombre2);
 
-        String apellido2 = getIntent().getStringExtra("apellidoTercerA");
+        String apellido2 = getIntent().getStringExtra("apellidoVolver");
         apellido.setText(apellido2);
 
-        String base2 = getIntent().getStringExtra("baseTercerA");
+        String base2 = getIntent().getStringExtra("baseVolver");
         base.setText(base2);
 
-        String exponente2 = getIntent().getStringExtra("exponenteTercerA");
+        String exponente2 = getIntent().getStringExtra("exponenteVolver");
         exponente.setText(exponente2);
+
+
 
 
     }
     public void siguiente(View view){
         Intent intent=new Intent(this,SegundoActivity.class);
         startActivity(intent);
+    }
+    public void factorial(View view){
+        Calculos calculos= new Calculos();
+        factorial.setText(String.valueOf(calculos.factorial(Double.parseDouble(getIntent().getStringExtra("factorialVolver")))));
     }
 }
